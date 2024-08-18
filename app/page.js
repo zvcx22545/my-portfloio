@@ -1,26 +1,32 @@
+/* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import Image from "next/image";
+import Navbar from "./components/Nav/page";
+import About from "./components/About/page";
 
 export default function Home() {
   return (
-    <div className="container">
-    <div className="mx-auto px-[9.375rem] z-10 relative">
-    <div className="profile">
-      <nav className="flex justify-between p-4 gap-5 items-center text-white">
-        <div className="logo text-[2rem]">DREAM</div>
-        <ul className="nav flex justify-center gap-5">
-          <li className="text-[1rem]">Home</li>
-          <li className="text-[1rem]">About</li>
-          <li className="text-[1rem]">Skill</li>
-          <li className="text-[1rem]">Contact</li>
-          <li className="text-[1rem]">Experience</li>
-        </ul>
-      </nav>
-      </div>
-    </div>
-    <svg className="bgs w-full absolute top-[-18rem] right-[-7rem] z-0" viewBox="0 0 1426 789" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1386.13 613.842C1165.63 647.342 991 817.5 664 784.5C488.5 760 0.13489 525.791 0.13489 235.842C0.13489 -54.1077 -21.8381 4.94752 495.1 4.94752C1012.04 4.94752 1583 147.5 1386.13 613.842Z" fill="#A91D3A"/>
-</svg>
-
+    <div className="containers">
+      <Navbar/>
+      <section className="profile relative h-[105vh] w-full overflow-hidden">
+      <img src="/images/background.png" alt=""
+      className="absolute z-[1] w-full object-cover shadow mt-[-150px] border-none"
+       />
+        <div className="mx-auto px-[150px] absolute z-[2] w-full">
+        <div className="content top-[300px] ml-10 relative flex justify-between items-center">
+        <img src="/images/Myprofile.png" className=" border-white border-[10px] profile  rounded-full max-[1280px]:w-[35%] object-cover w-[40%]" alt="" />
+        <div className="text-white mb-[50px]">
+          <div className="name text-[40px] font-medium">Chisanupong Limsakul</div>
+          <div className="name text-[4rem] font-bold">Front End</div>
+          <div className="name text-[3rem] font-bold ">Developer</div>
+          <div className="name text-[1rem] font-medium mt-4">ผมสนใจในการพัฒนาหน้าตาเว็บไซต์ โดยผมมี ประสบการณ์<br />ด้านการพัฒนาเว็บไซต์มาประมาณ 4 เดือนด้าน Front End<br /> และต้องการพัฒนาฝีมือต่อทางด้านเว็บไซต์</div>
+        </div>
+        </div>
+        </div>
+      </section>
+      <section id="about" className="px-[9.375rem]">
+        <About/>
+      </section>
     </div>
   );
 }

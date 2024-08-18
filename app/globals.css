@@ -10,12 +10,7 @@
 }
 body {
   background-color: black;
-  svg.bgs
-  {
-    background-size: contain !important;
-    width: 120%;
-    filter: drop-shadow(65px 36px 0px rgba(169, 29, 58, 0.56));
-  }
+  min-height: 100vh;
 }
 
 @layer utilities {
@@ -23,3 +18,11 @@ body {
     text-wrap: balance;
   }
 }
+
+img.shadow
+  {
+    background-size: cover !important;
+    filter: drop-shadow(65px 60px 0px rgba(169, 40, 58, 0.56));
+  }
+
+  
