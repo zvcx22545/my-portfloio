@@ -1,0 +1,14 @@
+.logo
+{
+    background:linear-gradient(#4bbcd5, #62bcbe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.smooth-scroll {
+  cursor: pointer;
+}

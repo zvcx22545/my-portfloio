@@ -1,0 +1,18 @@
+img.profile
+{
+    /* filter: drop-shadow(-50px 5px 120px rgba(202, 46, 101, 0.507)); */
+    border-radius: 20%;
+    background: rgb(226,49,49);
+    background: linear-gradient(90deg, rgba(226,49,49,0.4) 0%, rgba(226,51,190,0.3) 35%, rgba(0,212,255,0.3) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: none; 
+    box-shadow: -10px 5px 120px rgba(202, 46, 101, 0.507);
+}
+
+.Job
+{
+    background:linear-gradient(#4bbcd5, #62bcbe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

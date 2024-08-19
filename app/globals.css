@@ -9,8 +9,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: black;
-  min-height: 100vh;
+  /* background-color: rgba(227, 219, 219, 0.597); */
 }
 
 @layer utilities {
@@ -19,10 +18,12 @@ body {
   }
 }
 
-img.shadow
-  {
-    background-size: cover !important;
-    filter: drop-shadow(65px 60px 0px rgba(169, 40, 58, 0.56));
-  }
-
+.profile
+{
+  background-color: rgba(227, 219, 219, 0.597);
+}
+#skill
+{
+    background-color: rgba(227, 219, 219, 0.597);
+}
   

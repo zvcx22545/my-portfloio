@@ -1,25 +1,26 @@
 import React from 'react'
 import Link from 'next/link'
+import './style.css'
 
 function Navbar() {
   return (
-    <nav className="fixed shadow-lg top-0 left-0 px-[9.375rem] w-full z-[10] flex justify-between p-4 gap-5 items-center text-white bg-[#A91D3A]">
-        <div className="logo text-[2rem]">DREAM</div>
+    <nav className="fixed z-[999] shadow-lg px-[9.375rem] w-full flex justify-between p-4 gap-5 items-center bg-base-200" >
+        <div className="logo text-[2rem]"><Link href="/">DREAM</Link></div>
         <ul className="nav flex justify-center gap-5">
           <li className="text-[1rem]">
-            <Link href="/">Home</Link>
+            <Link href="#profile" className='smooth-scroll cursor-pointer'>Home</Link>
           </li>
           <li className="text-[1rem]">
-            <Link href="/about">About</Link>
+            <Link href="#about" className='smooth-scroll cursor-pointer'>About</Link>
           </li>
           <li className="text-[1rem]">
-            <Link href="/skill">Skill</Link>
+            <Link href="#skill" className='smooth-scroll cursor-pointer'>Skill</Link>
           </li>
           <li className="text-[1rem]">
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact" className='smooth-scroll cursor-pointer'>Contact</Link>
           </li>
           <li className="text-[1rem]">
-            <Link href="/experience">Experience</Link>
+            <Link href="/experience" className='smooth-scroll cursor-pointer'>Experience</Link>
           </li>
         </ul>
       </nav>
