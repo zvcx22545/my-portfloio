@@ -3,6 +3,7 @@
     background:linear-gradient(#4bbcd5, #62bcbe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 
 html {
@@ -11,4 +12,43 @@ html {
 
 .smooth-scroll {
   cursor: pointer;
+  letter-spacing: 0.5px;
+  position: relative;
+  font-weight: 700;
+  padding: 0 10px;
 }
+
+.smooth-scroll::after
+{
+  content: "";
+  position: absolute;
+  background:linear-gradient(#4bbcd5, #62bcbe);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.smooth-scroll:hover::after
+{
+  width: 100%;
+}
+
+.active {
+  color: #3498db;
+  font-weight: 700; 
+  position: relative;
+}
+
+.active::after
+{
+  content:"";
+  position: absolute;
+  background:linear-gradient(#4bbcd5, #62bcbe);
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -8px;
+}
+

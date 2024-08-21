@@ -5,7 +5,7 @@ function Profile() {
   return (
         <div className="mx-auto px-[150px] w-full overflow-hidden">
         <div className="content mt-[150px] flex justify-between items-center">
-        <img src="./images/Profiles.png" alt="This profile for me" className='w-[50%] profile animate-jump-in animate-once animate-duration-700 animate-delay-500 animate-ease-in-out' />
+        <img src="./images/Profile.png" alt="This profile for me" className='w-[50%] relative bottom-0 profile animate-jump-in animate-once animate-duration-700 animate-delay-500 animate-ease-in-out' />
         <div className="mb-[55px]">
           <div className="name text-[40px] font-bold">Chisanupong Limsakul</div>
           <div className="Job text-[4rem] font-bold animate-fade-right animate-once animate-duration-700 animate-delay-300 animate-ease-in">Front End</div>

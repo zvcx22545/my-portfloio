@@ -13,10 +13,10 @@ export default function Home() {
       <section className="profile w-full z-0 overflow-hidden" id="profile">
         <Profile/>
       </section>
-      <section id="about" className="px-[9.375rem] block items-center mb-12 mt-12">
+      <section id="about" className="px-[9.375rem] block items-center pb-12 pt-12">
         <About/>
       </section>
-      <section id="skill" className="px-[9.375rem] block items-center mb-12 mt-12">
+      <section id="skill" className="px-[9.375rem] block items-center pb-12 pt-12">
         <Skill/>
       </section>
     </div>

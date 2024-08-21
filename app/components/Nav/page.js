@@ -1,28 +1,46 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 import './style.css'
+import { useState} from 'react';
 
 function Navbar() {
+  const [activeId, setActiveId] = useState('#profile');
+
+  const handleLinkClick = (id) => {
+    setActiveId(id);
+  };
+
   return (
     <nav className="fixed z-[999] shadow-lg px-[9.375rem] w-full flex justify-between p-4 gap-5 items-center bg-base-200" >
-        <div className="logo text-[2rem]"><Link href="/">DREAM</Link></div>
-        <ul className="nav flex justify-center gap-5">
-          <li className="text-[1rem]">
-            <Link href="#profile" className='smooth-scroll cursor-pointer'>Home</Link>
-          </li>
-          <li className="text-[1rem]">
-            <Link href="#about" className='smooth-scroll cursor-pointer'>About</Link>
-          </li>
-          <li className="text-[1rem]">
-            <Link href="#skill" className='smooth-scroll cursor-pointer'>Skill</Link>
-          </li>
-          <li className="text-[1rem]">
-            <Link href="/contact" className='smooth-scroll cursor-pointer'>Contact</Link>
-          </li>
-          <li className="text-[1rem]">
-            <Link href="/experience" className='smooth-scroll cursor-pointer'>Experience</Link>
-          </li>
-        </ul>
+        <div className="logo text-[2rem]"><Link href="/" onClick={() => handleLinkClick('#profile')}>DREAM</Link></div>
+        <ul className="nav flex justify-center gap-3">
+        <li className={`text-[1rem] cursor-pointer ${activeId === '#profile' ? 'active' : ''}`}>
+          <Link href="#profile" onClick={() => handleLinkClick('#profile')} className='smooth-scroll '>
+            Home
+          </Link>
+        </li>
+        <li className={`text-[1rem] cursor-pointer ${activeId === '#about' ? 'active' : ''}`}>
+          <Link href="#about" onClick={() => handleLinkClick('#about')} className='smooth-scroll '>
+            About
+          </Link>
+        </li>
+        <li className={`text-[1rem] cursor-pointer ${activeId === '#skill' ? 'active' : ''}`}>
+          <Link href="#skill" onClick={() => handleLinkClick('#skill')} className='smooth-scroll '>
+            Skill
+          </Link>
+        </li>
+        <li className={`text-[1rem] cursor-pointer ${activeId === '#contact' ? 'active' : ''}`}>
+          <Link href="#contact" onClick={() => handleLinkClick('#contact')} className='smooth-scroll '>
+            Contact
+          </Link>
+        </li>
+        <li className={`text-[1rem] cursor-pointer ${activeId === '#experience' ? 'active' : ''}`}>
+          <Link href="#experience" onClick={() => handleLinkClick('#experience')} className='smooth-scroll '>
+            Experience
+          </Link>
+        </li>
+      </ul>
       </nav>
   )
 }
