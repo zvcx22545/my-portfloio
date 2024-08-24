@@ -1,0 +1,13 @@
+.card-body {
+
+  .card-title 
+  {
+    font-size: clamp(1rem, 0.3571rem + 0.9524vw, 1.5rem);
+  }
+
+  .card-content
+  {
+    font-size: clamp(0.75rem, 0.4286rem + 0.4762vw, 1rem);
+  }
+
+}
