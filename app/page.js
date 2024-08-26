@@ -8,6 +8,7 @@ import Profile from "./components/Profile/page";
 import Skill from "./components/Skill/Skill";
 import LoadingSpinner from "./Loading/LoadingSpinner";
 import React, { useState, useEffect } from 'react';
+import Experience from "./components/Experience/page";
 
 
 export default function Home() {
@@ -35,6 +36,9 @@ export default function Home() {
       </section>
       <section id="skill" className="px-[9.375rem] max-sm:px-[5rem] block items-center pb-12 pt-12">
         <Skill/>
+      </section>
+      <section id="experience" className="px-[9.375rem] max-sm:px-[5rem] block items-center pb-12 pt-12">
+        <Experience/>
       </section>
     </div>
   );
