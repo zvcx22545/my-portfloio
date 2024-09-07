@@ -1,4 +1,11 @@
 .About
 {
     background-color: rgba(227, 219, 219, 0.597);
+    
 }
+
+.CV
+    {
+        font-size: clamp(0.75rem, 0.4286rem + 0.4762vw, 1rem);
+        background: linear-gradient(110.6deg, rgb(179, 157, 219) 7%, rgb(150, 159, 222) 47.7%, rgb(24, 255, 255) 100.6%);
+    }
