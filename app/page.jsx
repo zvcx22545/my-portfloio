@@ -14,12 +14,22 @@ import Experience from "./components/Experience/page";
 export default function Home() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    // Simulate a network request or loading process
-    const timer = setTimeout(() => {
+    // Check when the page has fully loaded (including all assets such as images)
+    const handleLoad = () => {
+      setLoading(false); // Hide the spinner when page has loaded
+    };
+
+    // Listen for the page load event
+    if (document.readyState === "complete") {
+      // If the page is already loaded, set loading to false immediately
       setLoading(false);
-    }, 1000); // You can adjust the time based on your actual loading time
-  
-    return () => clearTimeout(timer);
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => {
+      window.removeEventListener("load", handleLoad); // Clean up event listener
+    };
   }, []);
   
   if (loading) {

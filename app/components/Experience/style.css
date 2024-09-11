@@ -1,28 +1,5 @@
-.experience-carousel {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .carousel-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    height: 100%;
-    background-repeat: no-repeat;
-  }
-  
-  .carousel-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Optional background overlay */
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  
+.image
+{
+  background-position: center center;
+  background-repeat: no-repeat;
+}
