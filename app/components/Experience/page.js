@@ -14,12 +14,15 @@ const Experience = () => {
       description: 'Html CSS PHP Javascript Tailwind Bootstrap Figma',
       content: 'โปรเจคนี้เป็นโปรเจคเกี่ยวกับการโปรโมทร้านค้าในมหาวิทยาลัย',
       imageUrl: '/images/d1.png',
+      textbutton: 'GitHub',
+      Url:'https://github.com/zvcx22545/Webproject'
     },
     {
       id: 2,
       title: 'Slide 2',
       description: 'This is the second slide description.',
       imageUrl: '/images/slide2.jpg',
+      textbutton: 'เข้าสู่เว็บไซต์',
     },
     {
       id: 3,
@@ -73,12 +76,14 @@ const Experience = () => {
                  </div>
                   <p className="text-[12px] sm:text-base text-left">{slide.content}</p>
                 </div>
+                {slide.textbutton && slide.Url && (
                   <button className=" font-semibold text-[1rem] text-white py-2 px-4 rounded-full CV mt-6">
-          <Link download href="./Chisanuponh Limsakul.pdf" passHref className='flex items-center justify-center gap-2 rounded-[12px]'>
+          <Link href={slide.Url} passHref className='flex items-center justify-center gap-2 rounded-[12px]'>
               <img src="./images/cursor.png" className='max-sm:w-[20px] w-[30px]' alt="This is logo download of cv" />
-              <div className="font-bold text-white enter-w">เข้าสู่เว็บไซต์</div>
+              <div className="font-bold text-white enter-w">{slide.textbutton}</div>
         </Link>
             </button>
+                )}
               </div>
             </div>
           ))}
