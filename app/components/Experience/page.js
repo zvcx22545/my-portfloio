@@ -15,7 +15,7 @@ const Experience = () => {
       content: 'โปรเจคนี้เป็นโปรเจคเกี่ยวกับการโปรโมทร้านค้าในมหาวิทยาลัย',
       imageUrl: '/images/d1.png',
       textbutton: 'GitHub',
-      Url:'https://github.com/zvcx22545/Webproject'
+      Url: 'https://github.com/zvcx22545/Webproject'
     },
     {
       id: 2,
@@ -63,26 +63,26 @@ const Experience = () => {
               <div className="absolute left-1/2 transform -translate-x-1/2 top-1/2 max-sm:w-full -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-3 rounded-lg text-center">
                 <h2 className="text-[15px] sm:text-xl md:text-2xl lg:text-3xl font-bold">{slide.title}</h2>
                 <div className="flex gap-1">
-                <div className="flex gap-1">
-                  <p className="text-[12px] sm:text-base">Stack</p>
-                  <p className="text-[12px] sm:text-base">:</p>
-                </div>
+                  <div className="flex gap-1">
+                    <p className="text-[12px] sm:text-base">Stack</p>
+                    <p className="text-[12px] sm:text-base">:</p>
+                  </div>
                   <p className="text-[12px] sm:text-base text-left">{slide.description}</p>
                 </div>
                 <div className="flex gap-1">
                   <div className="flex gap-1">
-                  <p className="text-[12px] sm:text-base">Description</p>
-                  <p className="text-[12px] sm:text-base">:</p>
-                 </div>
+                    <p className="text-[12px] sm:text-base">Description</p>
+                    <p className="text-[12px] sm:text-base">:</p>
+                  </div>
                   <p className="text-[12px] sm:text-base text-left">{slide.content}</p>
                 </div>
                 {slide.textbutton && slide.Url && (
                   <button className=" font-semibold text-[1rem] text-white py-2 px-4 rounded-full CV mt-6">
-          <Link href={slide.Url} passHref className='flex items-center justify-center gap-2 rounded-[12px]'>
-              <img src="./images/cursor.png" className='max-sm:w-[20px] w-[30px]' alt="This is logo download of cv" />
-              <div className="font-bold text-white enter-w">{slide.textbutton}</div>
-        </Link>
-            </button>
+                    <Link href={slide.Url} passHref className='flex items-center justify-center gap-2 rounded-[12px]'>
+                      <img src="./images/cursor.png" className='max-sm:w-[20px] w-[30px]' alt="This is logo download of cv" />
+                      <div className="font-bold text-white enter-w">{slide.textbutton}</div>
+                    </Link>
+                  </button>
                 )}
               </div>
             </div>
@@ -112,14 +112,13 @@ const Experience = () => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`h-3 rounded-full transition-all duration-500 ease-in-out origin-center ${
-              index === currentIndex ? 'bg-[#40E0D0] scale-x-125 w-12' : 'bg-gray-500 w-3 h-3'
-            }`}
+            className={`h-3 rounded-full transition-all duration-500 ease-in-out origin-center ${index === currentIndex ? 'bg-[#40E0D0] scale-x-125 w-12' : 'bg-gray-500 w-3 h-3'
+              }`}
           ></button>
         ))}
       </div>
 
-      
+
     </div>
   );
 };
