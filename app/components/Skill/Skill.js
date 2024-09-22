@@ -12,7 +12,7 @@ function Skill() {
     {
         image: "https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png",
         title: "CSS",
-        content: "<b>Css</b> เป็นภาษาที่ผมใช้ในการตกแต่งหน้าเว็บ และ ในการจัด Layout"
+        content: "<b>CSS</b> เป็นภาษาที่ผมใช้ในการตกแต่งหน้าเว็บ และ ในการจัด Layout"
     },
     {
         image: "https://ih1.redbubble.net/image.815350031.4911/st,small,845x845-pad,1000x1000,f8f8f8.u1.jpg",

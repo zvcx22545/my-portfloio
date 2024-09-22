@@ -1,5 +1,28 @@
 .image
 {
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.CV
+    {
+        font-size: clamp(0.75rem, 0.4286rem + 0.4762vw, 1rem);
+        background: linear-gradient(110.6deg, rgb(179, 157, 219) 7%, rgb(150, 159, 222) 47.7%, rgb(24, 255, 255) 100.6%);
+    }
+
+button
+{
+  .enter-w
+  {
+    font-size: clamp(0.75rem, 0.4286rem + 0.4762vw, 1rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .arrow
+  {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }

@@ -19,16 +19,14 @@ export default function Home() {
       setLoading(false); // Hide the spinner when page has loaded
     };
 
-    // Listen for the page load event
     if (document.readyState === "complete") {
-      // If the page is already loaded, set loading to false immediately
       setLoading(false);
     } else {
       window.addEventListener("load", handleLoad);
     }
 
     return () => {
-      window.removeEventListener("load", handleLoad); // Clean up event listener
+      window.removeEventListener("load", handleLoad);
     };
   }, []);
   
@@ -47,7 +45,7 @@ export default function Home() {
       <section id="skill" className="px-[9.375rem] max-sm:px-[5rem] block items-center pb-12 pt-12">
         <Skill/>
       </section>
-      <section id="experience" className="px-[9.375rem] max-sm:px-[5rem] block items-center pb-12 pt-12">
+      <section id="experience" className="px-[9.375rem] max-sm:px-[4.2rem] block items-center pb-12 pt-12">
         <Experience/>
       </section>
     </div>
