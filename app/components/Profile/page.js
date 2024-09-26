@@ -4,7 +4,7 @@ import './style.css'
 
 function Profile() {
   return (
-    <div className="mx-auto px-[150px] w-full overflow-hidden">
+    <div className="mx-auto px-[6.375rem] w-full overflow-hidden">
       {/* Ensure parent is relative */}
       <div className="content mt-[150px] relative flex h-[45vh] justify-between w-full">
         {/* Profile image */}
