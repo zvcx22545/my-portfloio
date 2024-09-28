@@ -63,7 +63,7 @@ function Skill() {
       <div className="flex justify-center">
         <div className="font-bold text-[3rem] Header">SKILL</div>
       </div>
-      <div className="grid grid-cols-3 max-sm:grid-cols-1 gap-4 my-5">
+      <div className="grid grid-cols-3 max-sm:grid-cols-1 max-lg:grid-cols-2 gap-4 my-5">
       {Object.entries(card).map(([key, card]) => (
           <div key={key} className="card card-side bg-base-100 shadow-xl w-full">
             <figure className='w-[80%]'>
