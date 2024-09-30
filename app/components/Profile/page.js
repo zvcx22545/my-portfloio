@@ -6,7 +6,7 @@ function Profile() {
   return (
     <div className="mx-auto px-[6.375rem] w-full overflow-hidden">
       {/* Ensure parent is relative */}
-      <div className="content mt-[150px] relative flex h-[45vh] justify-between w-full">
+      <div className="content mt-[150px] relative flex h-[50vh] justify-between w-full">
         {/* Profile image */}
         <img
           src="./images/Profile.png"
@@ -14,7 +14,7 @@ function Profile() {
           className='w-[50%] profile absolute left-0 bottom-0 animate-jump-in animate-once animate-duration-700 animate-delay-500 animate-ease-in-out'
         />
         {/* Profile text */}
-        <div className="mb-[55px] absolute right-0">
+        <div className="absolute right-0 top1/2">
           <div className="name text-[40px] font-bold">
             Chisanupong Limsakul
           </div>

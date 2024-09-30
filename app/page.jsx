@@ -34,7 +34,7 @@ export default function Home() {
     return <LoadingSpinner/>;
   }
   return (
-    <div className="container">
+    <div className="containers">
       <Navbar/>
       <section className="profile w-full overflow-hidden" id="profile">
         <Profile/>

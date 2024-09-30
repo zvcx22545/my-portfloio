@@ -1,6 +1,5 @@
-.logo
-{
-    background:linear-gradient(#4bbcd5, #62bcbe);
+.logo {
+  background: linear-gradient(#4bbcd5, #62bcbe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -18,11 +17,10 @@ html {
   padding: 0 10px;
 }
 
-.smooth-scroll::after
-{
+.smooth-scroll::after {
   content: "";
   position: absolute;
-  background:linear-gradient(#4bbcd5, #62bcbe);
+  background: linear-gradient(#4bbcd5, #62bcbe);
   height: 3px;
   width: 0;
   left: 0;
@@ -30,25 +28,91 @@ html {
   transition: 0.3s;
 }
 
-.smooth-scroll:hover::after
-{
+.smooth-scroll:hover::after {
   width: 100%;
 }
 
 .active {
   color: #3498db;
-  font-weight: 700; 
+  font-weight: 700;
   position: relative;
 }
 
-.active::after
-{
-  content:"";
+.active::after {
+  content: "";
   position: absolute;
-  background:linear-gradient(#4bbcd5, #62bcbe);
+  background: linear-gradient(#4bbcd5, #62bcbe);
   height: 3px;
   width: 100%;
   left: 0;
   bottom: -8px;
 }
 
+nav {
+  .hamburger .line {
+    width: 50px;
+    height: 5px;
+    background-color: #000000;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  #hamburger-1.is-active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  #hamburger-1.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+  }
+
+  #hamburger-1.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 1280px) {
+  .nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top:80px;
+    width: 100%;
+    justify-content: center;
+    li
+    {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-left: 9.375rem;
+      a
+      {
+        font-size: 1.25rem !important;
+
+      }
+    }
+    
+  }
+
+}
+
+@media (max-width: 640px) {
+  .nav
+  {
+    li
+    {
+      margin-left: 1.25rem;
+    }
+  }
+}
