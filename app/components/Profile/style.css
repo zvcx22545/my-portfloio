@@ -17,3 +17,37 @@ img.profile
   -webkit-text-fill-color: transparent;
 }
 
+.name
+{
+  font-size: clamp(1.5rem, 1.2613rem + 1.0323vw, 2.5rem);
+}
+
+.text-job
+{
+  font-size: clamp(1.875rem, 1.3677rem + 2.1935vw, 4rem);
+}
+.text-job2
+{
+  font-size: clamp(1.75rem, 1.4516rem + 1.2903vw, 3rem);
+}
+
+@media (max-width: 1024px) {
+  .absolute.content
+  {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  img.profile
+  {
+    left:25%;
+  }
+}
+
+@media only screen and (max-width:767px)
+{
+  img.profile
+  {
+    left:0%;
+  }
+}
