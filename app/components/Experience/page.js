@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
-import { useState,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import './style.css';
@@ -72,9 +72,8 @@ const Experience = () => {
     <div className="w-full mx-auto relative">
       <div className="relative h-[20rem] sm:h-[25rem] md:h-[30rem] lg:h-[35rem] overflow-hidden">
         <div
-          className={`absolute inset-0 flex transition-opacity duration-500 ${
-            isFading ? 'opacity-0' : 'opacity-100'
-          }`}
+          className={`absolute inset-0 flex transition-opacity duration-500 ${isFading ? 'opacity-0' : 'opacity-100'
+            }`}
         >
           {slides.map((slide, index) => (
             <div key={slide.id} className={`min-w-full ${index === currentIndex ? 'block' : 'hidden'}`}>
@@ -131,7 +130,7 @@ const Experience = () => {
 
       {/* Left Arrow */}
       <button
-        className="absolute top-1/2 max-[500px]:left-[-60px] left-[-4.5rem] transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 focus:outline-none"
+        className="absolute top-1/2 max-[1024px]:left-[4px] left-[-4.5rem] transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 focus:outline-none"
         onClick={goToPrevious}
       >
         <ChevronLeftIcon className="h-8 w-8 arrow" />
@@ -139,7 +138,7 @@ const Experience = () => {
 
       {/* Right Arrow */}
       <button
-        className="absolute top-1/2 max-[500px]:right-[-60px] right-[-4.5rem] transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 focus:outline-none"
+        className="absolute top-1/2 max-[1024px]:right-[4px] right-[-4.5rem] transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 focus:outline-none"
         onClick={goToNext}
       >
         <ChevronRightIcon className="h-8 w-8 arrow" />
@@ -151,9 +150,8 @@ const Experience = () => {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`h-3 rounded-full transition-all duration-500 ease-in-out origin-center ${
-              index === currentIndex ? 'bg-[#40E0D0] scale-x-125 w-12' : 'bg-gray-500 w-3 h-3'
-            }`}
+            className={`h-3 rounded-full transition-all duration-500 ease-in-out origin-center ${index === currentIndex ? 'bg-[#40E0D0] scale-x-125 w-12' : 'bg-gray-500 w-3 h-3'
+              }`}
           ></button>
         ))}
       </div>
