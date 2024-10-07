@@ -6,7 +6,7 @@ function Profile() {
   return (
     <div className="mx-auto px-[6.375rem] max-lg:px-[3rem] w-full overflow-hidden">
       {/* Ensure parent is relative */}
-      <div className="content mt-[150px] max-sm:mt-[100px] relative flex h-[50vh] max-sm:h-[80vh] justify-between w-full">
+      <div className="content mt-[150px] max-sm:mt-[65px] relative flex h-[50vh] max-sm:h-[80vh] justify-between w-full">
         {/* Profile image */}
         <img
           src="./images/Profile.png"
