@@ -6,7 +6,7 @@ function About() {
   return (
     <div className=''>
         <div className="content">
-        <div className="flex gap-4">
+        <div className="flex gap-4 max-[600px]:justify-center">
             <div className="font-bold text-[3rem]">About</div>
             <div className="text-[#A91D3A] font-bold text-[3rem] ">Me</div>
             </div>

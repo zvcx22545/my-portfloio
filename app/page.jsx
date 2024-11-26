@@ -39,10 +39,10 @@ export default function Home() {
       <section className="profile w-full overflow-hidden" id="profile">
         <Profile/>
       </section>
-      <section id="about" className="px-[6.375rem] w-full block items-center pb-12 pt-12">
+      <section id="about" className="px-[6.375rem] max-lg:px-[3rem] w-full block items-center pb-12 pt-12">
         <About/>
       </section>
-      <section id="skill" className="px-[6.375rem] max-sm:px-[5rem] block items-center pb-12 pt-12">
+      <section id="skill" className="px-[6.375rem] max-lg:px-[3rem] block items-center pb-12 pt-12">
         <Skill/>
       </section>
       <section id="experience" className="px-[6.375rem] max-lg:px-[0rem] block items-center pb-12 pt-12  max-lg:pt-[0rem]">

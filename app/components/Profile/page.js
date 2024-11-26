@@ -21,10 +21,10 @@ function Profile() {
           <div className="Job text-job text-center font-bold animate-fade-right animate-once animate-duration-700 animate-delay-300 animate-ease-in">
             Front End
           </div>
-          <div className="Job text-job2 mt-[-20px] text-center font-bold animate-fade-left animate-once animate-duration-700 animate-delay-300 animate-ease-in">
+          <div className="Job text-job2 mt-[-20px] max-[600px]:mt-[-10px] text-center font-bold animate-fade-left animate-once animate-duration-700 animate-delay-300 animate-ease-in">
             Developer
           </div>
-          <div className=" text-[1rem] font-semibold mt-4 text-center">
+          <div className=" text-[1rem] font-semibold mt-4 max-[600px]:mt-2 text-center">
             ผมสนใจในการพัฒนาหน้าตาเว็บไซต์ โดยผมมี ประสบการณ์<br />
             ด้านการพัฒนาเว็บไซต์มาประมาณ 4 เดือนด้าน Front End<br />
             และต้องการพัฒนาฝีมือต่อทางด้านเว็บไซต์
