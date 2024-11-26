@@ -130,7 +130,7 @@ const Experience = () => {
 
       {/* Left Arrow */}
       <button
-        className="absolute top-1/2 max-[1024px]:left-[4px] left-[-4.5rem] transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 focus:outline-none"
+        className="absolute top-1/2 max-[1024px]:hidden max-[1024px]:left-[4px] left-[-4.5rem] transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 focus:outline-none"
         onClick={goToPrevious}
       >
         <ChevronLeftIcon className="h-8 w-8 arrow" />
@@ -138,7 +138,7 @@ const Experience = () => {
 
       {/* Right Arrow */}
       <button
-        className="absolute top-1/2 max-[1024px]:right-[4px] right-[-4.5rem] transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 focus:outline-none"
+        className="absolute top-1/2 max-[1024px]:hidden max-[1024px]:right-[25px] right-[-4.5rem] transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-50 p-3 rounded-full hover:bg-opacity-75 focus:outline-none"
         onClick={goToNext}
       >
         <ChevronRightIcon className="h-8 w-8 arrow" />

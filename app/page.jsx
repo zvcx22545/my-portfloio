@@ -45,7 +45,7 @@ export default function Home() {
       <section id="skill" className="px-[6.375rem] max-lg:px-[3rem] block items-center pb-12 pt-12">
         <Skill/>
       </section>
-      <section id="experience" className="px-[6.375rem] max-lg:px-[0rem] block items-center pb-12 pt-12  max-lg:pt-[0rem]">
+      <section id="experience" className=" max-lg:px-[0rem] block items-center max-lg:pt-[0rem]">
         <Experience/>
       </section>
     </div>
